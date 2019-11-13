@@ -19,6 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link href="/css/app.css" rel="stylesheet">
+  
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper" id="app">
@@ -85,6 +86,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </router-link>
               </li>
 
+              <li class="nav-item">
+                <router-link to="/shop" class="nav-link">
+                  <i class="nav-icon fas fa-shopping-cart teal"></i>
+                  <p>
+                   Shop
+                    
+                  </p>
+                </router-link>
+              </li>
+
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link ">
@@ -122,9 +133,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
           @endcan
           <li class="nav-item">
             <router-link to="/profile" class="nav-link">
-              <i class="nav-icon fas fa-user orange"></i>
+              <i class="nav-icon fas fa-user indigo"></i>
               <p>
                Profile
+                
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/product" class="nav-link">
+              <i class="nav-icon fas fa-user cyan"></i>
+              <p>
+               Product
+                
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/customer" class="nav-link">
+              <i class="nav-icon fas fa-users green"></i>
+              <p>
+               Customer
                 
               </p>
             </router-link>
@@ -163,9 +192,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+        
         <router-view></router-view>
 
         <vue-progress-bar></vue-progress-bar>
+        
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->

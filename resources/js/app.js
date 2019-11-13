@@ -52,6 +52,9 @@ const routes = [
     { path: '/developer', component: require('./components/Developer.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default },
     { path: '/users', component: require('./components/Users.vue').default },
+    { path: '/product', component: require('./components/Product.vue').default },
+    { path: '/shop', component: require('./components/Shop.vue').default },
+    { path: '/customer', component: require('./components/Customer.vue').default }
   ]
 
   const router = new VueRouter({
@@ -96,6 +99,7 @@ Vue.component(
 );
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('Invoice', require('./components/Invoice.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
